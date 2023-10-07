@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,300;1,400&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+#loadingScreen{
+    background: rgb(255, 255, 255) url(assets/loader.gif) no-repeat center center;
+    background-size: 40%;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background: rgb(179, 179, 179);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+
+
+iframe{
+    width: 50%;
+    height: 20%;
+    display: none;
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+#navBar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0%;
+    padding: 0%;
+    z-index: 50;
+}
+
+#logoIMG{
+    width: 4%;
+    margin-left: 3%;
+}
+
+/* FIRST PAGE */
+
+
+#introText2{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    background: #6100CF;
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #6100CF 37%, #BA00CF 63%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #6100CF 37%, #BA00CF 63%);
+    background: radial-gradient(circle farthest-corner at center center, #6100CF 37%, #BA00CF 63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5vh;
+    text-align: center;
+} 
+
+
+#firstNewContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#firstNewText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+#newVidIntro{
+    width: 70%;
+}
+
+#pageLogo{
+    margin-top: 0%;
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+#FirstPage{
+    height: 145%;
+}
+
+/* SECOUND PAGE */
+
+#SecoundPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #000000;
+    max-width: 100%;   
+}
+
+#p2Video{
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 0%;
+}
+
+#textPage2{
+    margin-top: 5%;
+    height: 100%;
+    width: 30%;
+    color: white;
+}
+
+#p2Text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 400%;
+    margin-bottom: 0%;
+}
+
+#text2Page2{
+    margin-top: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* THIRD PAGE */
+
+#ThirdPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.tweets{
+    width: 55%;
+    height: 42%;
+    margin-bottom: 0%;
+}
+
+#page3Text{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 40%;
+    margin-bottom: 5%;
+    padding-bottom: 0%;
+    margin-left: 5%;
+
+}
+
+#page3Imgs{
+    display: flex;
+    margin-top: 0%;
+    padding-top: 0%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    padding: 0%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+#page3Text1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+#page3Text2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+/* Fourth Page */
+
+#FourthPage{
+    display: flex;
+    align-items: center;
+    background-color: rgb(249, 185, 108);
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cards{
+    display: flex;
+    align-items: center;
+    background-color: rgb(249, 185, 108);
+    justify-content: center; 
+    width: 100%;
+    height: 50%;
+}
+#contenuDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    background-color: rgb(255, 156, 36);
+    border-radius: 20px;
+    z-index: 20;
+    box-shadow: 0px 10px 40px rgb(53, 30, 0);
+    margin-top: 3%;
+    transition: 1s; 
+    flex-direction: column;
+    margin-bottom: 8%;
+}
+
+#netflixDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(79, 46, 6);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgb(53, 30, 0);
+    margin-top: 7%;
+    transition: 1000ms;
+    margin-left: 5%;
+    flex-direction: column;
+    margin-top: 0%;
+    margin-left: 15% ;
+}
+
+#amazonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(79, 46, 6);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgb(53, 30, 0);
+    margin-top: 7%;
+    transition: 1000ms;
+    flex-direction: column;
+    margin-top: 0%;
+}
+
+.priceText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+    font-weight: 600;
+    margin-top: 0%;
+    color: bisque;
+    text-align: center;
+}
+
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
+    font-weight: 600;
+    margin-top: 0%;
+    margin-bottom: 30%;
+    color: bisque;
+
+}
+
+#page4Text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 300%;
+    text-align: center;
+}
+
+#page4Textbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ScrollBar*/
+*{
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+}
+
+/* Basic and Cursor */
+
+*::-webkit-scrollbar {
+width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #000000;
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
+
+
+/* Last Page */
+
+#lastPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(79, 46, 6);
+    flex-direction: column;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#lastBox{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 20%;
+    width: 100%;
+    z-index: 20;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#lastPageText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 95%; 
+    overflow-y: hidden;
+}
+
+#lastPageText1{
+    color: #ffe4c4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-align: center;
+    z-index: 10;
+    margin-bottom: 15%;
+}
+
+#downPhone{
+    position: absolute;
+    margin-top: 20%;
+    width: 25%;
+    overflow-y: hidden;
+}
+
+#lastPageText2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: azure;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: beige;
+    transition: 1000ms;
+}
+
+a:hover{
+    color: burlywood;
+}
+
+
+
+
+
+
+/* Tablet Interface */
+
+@media (max-width: 912px){
+
+    /* Page2 */
+
+    .circle{
+        display: none;
+    }
+
+    #textPage2{
+        font-size: 80%;
+        margin-top: 55%;
+    }
+
+    #SecoundPage{
+        align-items: center;
+    }
+
+    /* Page1 */
+
+    #FirstPage{
+        height: 100%;
+    }
+
+    #navBar{
+        height: 10%;
+    }
+
+    #logoIMG{
+        width: 7%;
+    }
+
+    /* Page4 */
+
+    #downPhone{
+        width: 40%;
+        margin-top: 49%;
+    }
+
+    #lastPageText1{
+        margin-bottom: 40%;
+    }
+
+    /* Page3 */
+
+    #ThirdPage{
+        justify-content: center;
+        flex-direction: row;
+        padding: 0%;
+    }
+
+    #page3Text{
+        margin-top: 0%;
+    }
+
+    #page3Imgs{
+        width: 50%;
+        height: 75%;
+    }
+
+    .tweets{
+        width: 105%;
+        margin-top: 5%;
+        margin-right: 0%;
+    }
+
+    /* Page4 */
+
+    #netflixDiv{
+        margin-left: 15% ;
+    }
+
+    
+
+
+    /* Mobile Interface */
+    @media (max-width:590px){
+
+        /* Page2 */
+        #SecoundPage{
+            flex-direction: column;
+        }
+    
+        #textPage2{
+            font-size: 78%;
+            text-align: center;
+            width: 80%;
+            margin-top: 10%;
+        }
+    
+        #p2Video{
+            width: 70%;
+            margin-top: 30%;
+        }
+    
+        /* Page1  */
+    
+        #FirstPage{
+            padding: 0% ;
+            height: 100%;
+        }
+        #navBar{
+            height: 10%;
+            margin-bottom: 0%;
+        }
+    
+        #logoIMG{
+            width: 12%;
+        }
+    
+        #firstNewContent{
+            margin-top: 0%;
+        }
+    
+        #pageLogo{
+            width: 40%;
+        }
+    
+        /* Page3 */
+    
+        #ThirdPage{
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            padding: 0%;
+        }
+    
+        #page3Text{
+            text-align: center;
+            width: 80%;
+            margin: 0%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+    
+        #page3Text1{
+            font-size: 250%;
+            margin-bottom: 0%;
+        }
+    
+        #page3Text2{
+            font-size: 60%;
+            margin-top: 0%;
+            width: 80%;
+        }
+    
+        #page3Imgs{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0%;
+            width: 100%;
+            height: 50%;
+        }
+    
+        .tweets{
+            margin: 0%;
+            height: 40%;
+            width: 65%;
+        }
+    
+        #elon{
+            margin-bottom: 10%;
+        }
+        
+    
+    
+    
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    
+    
+        /* Page4 */
+    
+        #cards{
+            flex-direction: column;
+            height: 65%;
+    
+        }
+    
+        #contenuDiv{
+            height: 22%;
+            width: 80%;
+        }
+    
+        #amazonDiv{
+            height: 34%;
+            width: 80%;
+        }
+    
+        #netflixDiv{
+            height: 35%;
+            width: 80%;
+            margin-top: 35%;
+            margin-left: 0%;
+        }
+    
+        .priceText{
+            font-size: medium;
+        }
+    
+        #page4Text{
+            font-size: 200%;
+        }
+    
+    
+        /* LastPage */
+    
+        #lastPageText1{
+            font-size: 200%;
+            margin-bottom: 70%; 
+        }
+    
+        #downPhone{
+            width: 70%;
+            margin-top: 90%;
+        }
+    
+        #lastPageText2{
+            font-size: xx-small;
+        }
+        
+    
+    }
+    
+    @media (max-width:320px){
+        #netflix{
+            display: none;
+    
+        }
+    
+        #elon{
+            margin: 5%;
+        }
+
+        #p2Text{
+            font-size: 200%;
+        }
+    }
+
+}
+
